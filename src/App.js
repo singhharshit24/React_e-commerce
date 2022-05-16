@@ -8,7 +8,7 @@ import bag from './bag.jpg'
 import './App.css';
 import { useState } from 'react';
 
-
+//This is a function
 function App() {
   const [count, setcount] = useState(0)
   const [bill, setbill] = useState(0)
