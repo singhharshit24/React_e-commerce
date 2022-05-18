@@ -30,16 +30,24 @@ function App() {
       </div>
     );
   }
+  function check_out(){
+    alert("Ready for check out.")
+
+  }
+
   return (
     <div className="App">
+       
 
       <table align="center" cellSpacing={30}>
         <tr>
           <td colSpan={3} align="left"><h1 className='title'><u>ShopKart.com</u></h1></td>
-          <td align='right' className='cart'>
-            Items in Cart: {count}
-            <br />
-            Bill: {bill}$
+          <td align='right'>
+            <button  className='cart' onClick={check_out}>
+              Items in Cart: {count}
+              <br />
+              Bill: {bill}$
+            </button>
           </td>
         </tr>
         <tr>
